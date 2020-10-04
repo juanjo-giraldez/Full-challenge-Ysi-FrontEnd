@@ -27,7 +27,7 @@
           <td>{{companies.Direction}}</td>
           <td>{{companies.Phone}}</td>
           <td><a href={{companies.Web}} target="_blank" rel="noopener noreferrer">{{companies.Web}}</a></td>
-          <td>{{companies.CreatedAt}}</td>
+          <td>{{ helper companies.CreatedAt}}</td>
           <dir>
           <td>
             <button type="button" {{action 'deleteCompany' companies}} >Eliminar</button>
