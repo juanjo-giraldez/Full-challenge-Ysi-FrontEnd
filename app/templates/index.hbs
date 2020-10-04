@@ -1,3 +1,15 @@
+<div>
+  <div>
+    <h1>Directorio de compañias de trasnporte</h1>
+    <div>
+      {{input value=name placeholder="Nombre de la empresa"}}
+      {{input value=direction placeholder="Dirección"}}
+      {{input value=phone placeholder="Teléfono"}}
+      {{input value=web placeholder="Web"}}
+      <button type="button" {{action 'createdCompany'}} >Crear registro</button>
+    </div>
+
+
 <table >
       <tbody>
         <tr>
@@ -14,16 +26,19 @@
           <td>{{companies.Name}}</td>
           <td>{{companies.Direction}}</td>
           <td>{{companies.Phone}}</td>
-          <td>{{companies.Web}}</td>
+          <td><a href={{companies.Web}} target="_blank" rel="noopener noreferrer">{{companies.Web}}</a></td>
           <td>{{companies.CreatedAt}}</td>
           <dir>
           <td>
-            <button  {{action 'deleteCompany' companies}} >Eliminar</button>
+            <button type="button" {{action 'deleteCompany' companies}} >Eliminar</button>
           </td>
           </dir>
         </tr>
         {{/each}}
       </tbody>
     </table>
+
+     </div>
+</div>
 
 {{outlet}}

@@ -7,6 +7,22 @@ export default Controller.extend({
         deleteCompany(params) {
             const destroy = this.get('model').findBy('id', params.id);
             destroy.destroyRecord();
+        },
+
+        createdCompany() {
+
+            const name = this.get('name')
+            const direction = this.get('direction')
+            const phone = this.get('phone')
+            const web = this.get('web')
+
+            const createdCompany = this.store.createRecord('companies', {
+                Name: name,
+                Direction: direction,
+                Phone: phone,
+                Web: web
+            });
+            createdCompany.save();
         }
 
     }
