@@ -1,1 +1,29 @@
+<table >
+      <tbody>
+        <tr>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Télefono</th>
+          <th>Web</th>
+          <th>Fecha de Registro</th>
+          <th>Acciones</th>
+
+        </tr>
+        {{#each model as |companies|}}
+        <tr>
+          <td>{{companies.Name}}</td>
+          <td>{{companies.Direction}}</td>
+          <td>{{companies.Phone}}</td>
+          <td>{{companies.Web}}</td>
+          <td>{{companies.CreatedAt}}</td>
+          <dir>
+          <td>
+            <button>Eliminar</button>
+          </td>
+          </dir>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
 {{outlet}}
