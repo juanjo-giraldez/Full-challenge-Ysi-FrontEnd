@@ -21,8 +21,12 @@ export default Controller.extend({
                 Direction: direction,
                 Phone: phone,
                 Web: web
-            });
+            },
+            
+            );
+            
             createdCompany.save();
+            
         }
 
     }

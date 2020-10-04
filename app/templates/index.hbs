@@ -1,16 +1,19 @@
-<div>
-  <div>
+
+  <div class="responsive">
     <h1>Directorio de compañias de trasnporte</h1>
-    <div>
-      {{input value=name placeholder="Nombre de la empresa"}}
-      {{input value=direction placeholder="Dirección"}}
-      {{input value=phone placeholder="Teléfono"}}
-      {{input value=web placeholder="Web"}}
-      <button type="button" {{action 'createdCompany'}} >Crear registro</button>
-    </div>
+    <label>Empresa</label>
+      {{input value=name }}
+       <label>Dirección</label>
+      {{input value=direction }}
+       <label>Teléfono</label>
+      {{input value=phone }}
+       <label>Web</label>
+      {{input value=web }}
+      <button class="btnWhite" {{action 'createdCompany'}} >Crear registro</button>
+    
 
 
-<table >
+  <table >
       <tbody>
         <tr>
           <th>Nombre</th>
@@ -28,9 +31,9 @@
           <td>{{companies.Phone}}</td>
           <td><a href={{companies.Web}} target="_blank" rel="noopener noreferrer">{{companies.Web}}</a></td>
           <td>{{ helper companies.CreatedAt}}</td>
-          <dir>
+          <dir class="center">
           <td>
-            <button type="button" {{action 'deleteCompany' companies}} >Eliminar</button>
+            <button type="button" class="btnRed" {{action 'deleteCompany' companies}} >Eliminar</button>
           </td>
           </dir>
         </tr>
@@ -39,6 +42,6 @@
     </table>
 
      </div>
-</div>
+
 
 {{outlet}}
