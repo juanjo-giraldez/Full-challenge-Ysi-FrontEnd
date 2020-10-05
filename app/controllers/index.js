@@ -21,7 +21,7 @@ export default Controller.extend({
                 Direction: direction,
                 Phone: phone,
                 Web: web
-            },document.getElementsByClassName("white").value = ""
+            }
             
             
             );
