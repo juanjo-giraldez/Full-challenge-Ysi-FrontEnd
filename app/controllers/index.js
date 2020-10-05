@@ -21,13 +21,24 @@ export default Controller.extend({
                 Direction: direction,
                 Phone: phone,
                 Web: web
-            },
+            },document.getElementsByClassName("white").value = ""
+            
             
             );
             
             createdCompany.save();
             
+        },
+
+        limpiar() {
+            document.getElementById("clear1").value = "";
+            document.getElementById("clear2").value = "";
+            document.getElementById("clear3").value = "";
+            document.getElementById("clear4").value = "";
+            
         }
+
+
 
     }
 })

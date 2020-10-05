@@ -1,15 +1,15 @@
 
   <div class="responsive">
-    <h1>Directorio de compañias de trasnporte</h1>
+    <h1>Directorio de compañias</h1>
     <label>Empresa</label>
-      {{input value=name }}
+      {{input value=name id="clear1"}}
        <label>Dirección</label>
-      {{input value=direction }}
+      {{input value=direction id="clear2"}}
        <label>Teléfono</label>
-      {{input value=phone }}
+      {{input value=phone id="clear3"}}
        <label>Web</label>
-      {{input value=web }}
-      <button class="btnWhite" {{action 'createdCompany'}} >Crear registro</button>
+      {{input value=web id="clear4"}}
+      <button class="btnWhite" {{action 'createdCompany'}} {{action 'limpiar'}}>Crear registro</button>
     
 
 

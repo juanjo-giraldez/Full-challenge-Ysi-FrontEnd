@@ -33,7 +33,7 @@ body {
   
   table th,
   table td {
-    padding: .625em;
+    padding: 1em;
     text-align: center;
   }
   
@@ -47,7 +47,7 @@ body {
     
     display: grid;
     align-content: center;
-    margin: 0 3rem;
+    margin: 0 3rem 3rem  3rem 
 
 }
 
@@ -70,9 +70,7 @@ input {
    margin : .5rem 0;
 }
 
-input:last-child{
-  margin-bottom: 5rem;;
-}
+
 
 
 a {
@@ -106,7 +104,7 @@ button{
 .btnWhite{
     background-color:white;
     color: black;
-    margin: .75rem 0;
+    margin: 2rem 0;
 }
 
 button:hover {
